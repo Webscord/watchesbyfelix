@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique | WatchesByFelix | Montres Seiko Modifiées Artisanales</title>
+    <meta name="description" content="Découvrez et achetez des montres Seiko modifiées uniques, créées avec passion au Québec. Pièces exclusives et éditions limitées.">
+    
+    <!-- Métadonnées Open Graph pour le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Boutique WatchesByFelix | Montres Seiko Modifiées Artisanales">
+    <meta property="og:description" content="Découvrez et achetez des montres Seiko modifiées uniques, créées avec passion au Québec. Pièces exclusives et éditions limitées.">
+    <meta property="og:image" content="https://watchesbyfelix.github.io/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://watchesbyfelix.github.io/shop.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Métadonnées Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Boutique WatchesByFelix | Montres Seiko Modifiées Artisanales">
+    <meta name="twitter:description" content="Découvrez et achetez des montres Seiko modifiées uniques, créées avec passion au Québec. Pièces exclusives et éditions limitées.">
+    <meta name="twitter:image" content="https://watchesbyfelix.github.io/assets/images/og-image.jpg">
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="WatchesByFelix Logo" class="logo-img">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="shop.html" class="active">Boutique</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="ebook.html">E-Book</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Boutique -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Notre Boutique</h1>
+                <p class="section-subtitle">Des montres uniques, créées avec passion</p>
+            </div>
+            
+            <div class="shop-filters">
+                <div class="filter-group">
+                    <label for="collection-filter">Collection:</label>
+                    <select id="collection-filter" class="filter-select">
+                        <option value="all">Toutes les collections</option>
+                        <option value="diver">Plongeuse</option>
+                        <option value="pilot">Aviateur</option>
+                        <option value="dress">Habillée</option>
+                        <option value="field">Field</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="availability-filter">Disponibilité:</label>
+                    <select id="availability-filter" class="filter-select">
+                        <option value="all">Tous</option>
+                        <option value="available">Disponible</option>
+                        <option value="sold">Vendu</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="shop-grid">
+                <!-- Montre 1 -->
+                <div class="shop-item" data-collection="diver" data-availability="available">
+                    <a href="https://external-shop-url.com/product1" class="shop-item-link" target="_blank">
+                        <div class="shop-item-image">
+                            <img src="assets/images/watch1.jpg" alt="Océan Profond - Montre Seiko Mod Diver" class="img-fluid">
+                        </div>
+                        <div class="shop-item-info">
+                            <h3>Océan Profond</h3>
+                            <p class="shop-item-description">Inspirée des abysses, cette plongeuse modifiée offre une lisibilité exceptionnelle et une étanchéité à toute épreuve.</p>
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$650 CAD</span>
+                                <span class="shop-item-status available">Disponible</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Montre 2 -->
+                <div class="shop-item" data-collection="pilot" data-availability="sold">
+                    <div class="shop-item-image">
+                        <img src="assets/images/watch2.jpg" alt="Aviateur Vintage - Montre Seiko Mod Pilot" class="img-fluid">
+                        <div class="sold-badge">VENDU</div>
+                    </div>
+                    <div class="shop-item-info">
+                        <h3>Aviateur Vintage</h3>
+                        <p class="shop-item-description">Un hommage aux montres de pilote classiques avec un cadran hautement lisible et une précision remarquable.</p>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$580 CAD</span>
+                            <span class="shop-item-status sold">Vendu</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Montre 3 -->
+                <div class="shop-item" data-collection="dress" data-availability="available">
+                    <a href="https://external-shop-url.com/product3" class="shop-item-link" target="_blank">
+                        <div class="shop-item-image">
+                            <img src="assets/images/watch3.jpg" alt="Élégance Urbaine - Montre Seiko Mod Dress" class="img-fluid">
+                        </div>
+                        <div class="shop-item-info">
+                            <h3>Élégance Urbaine</h3>
+                            <p class="shop-item-description">Une montre habillée au design épuré qui s'adapte parfaitement aux occasions formelles comme décontractées.</p>
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$520 CAD</span>
+                                <span class="shop-item-status available">Disponible</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Montre 4 -->
+                <div class="shop-item" data-collection="field" data-availability="available">
+                    <a href="https://external-shop-url.com/product4" class="shop-item-link" target="_blank">
+                        <div class="shop-item-image">
+                            <img src="assets/images/watch4.jpg" alt="Explorateur - Montre Seiko Mod Field" class="img-fluid">
+                        </div>
+                        <div class="shop-item-info">
+                            <h3>Explorateur</h3>
+                            <p class="shop-item-description">Robuste et fiable, cette montre field est conçue pour vous accompagner dans toutes vos aventures.</p>
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$490 CAD</span>
+                                <span class="shop-item-status available">Disponible</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Montre 5 -->
+                <div class="shop-item" data-collection="diver" data-availability="sold">
+                    <div class="shop-item-image">
+                        <img src="assets/images/watch5.jpg" alt="Abysse Bleu - Montre Seiko Mod Diver" class="img-fluid">
+                        <div class="sold-badge">VENDU</div>
+                    </div>
+                    <div class="shop-item-info">
+                        <h3>Abysse Bleu</h3>
+                        <p class="shop-item-description">Une plongeuse au cadran bleu profond qui évoque les mystères des océans.</p>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$620 CAD</span>
+                            <span class="shop-item-status sold">Vendu</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Montre 6 -->
+                <div class="shop-item" data-collection="dress" data-availability="available">
+                    <a href="https://external-shop-url.com/product6" class="shop-item-link" target="_blank">
+                        <div class="shop-item-image">
+                            <img src="assets/images/watch6.jpg" alt="Minimaliste - Montre Seiko Mod Dress" class="img-fluid">
+                        </div>
+                        <div class="shop-item-info">
+                            <h3>Minimaliste</h3>
+                            <p class="shop-item-description">L'élégance dans sa forme la plus pure, avec un design épuré et intemporel.</p>
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$540 CAD</span>
+                                <span class="shop-item-status available">Disponible</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="shop-info">
+                <div class="info-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Livraison</h3>
+                    <p>Livraison gratuite partout au Canada. Livraison internationale disponible.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garantie</h3>
+                    <p>Toutes nos montres sont garanties 1 an contre les défauts de fabrication.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Retours</h3>
+                    <p>Politique de retour de 14 jours pour votre tranquillité d'esprit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Vous ne trouvez pas ce que vous cherchez?</h2>
+                <p>Contactez-nous pour discuter d'une création sur mesure qui correspondra parfaitement à vos attentes.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+                    <a href="ebook.html" class="btn btn-outline-light">Découvrir notre e-book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-white.png" alt="WatchesByFelix Logo" class="logo-img">
+                    <p>Des montres Seiko modifiées uniques, créées avec passion au Québec.</p>
+                    <div class="company-info">
+                        <p><strong>WatchesByFelix Inc.</strong></p>
+                        <p>123 Rue Horlogère, Montréal, QC H2X 3Y4</p>
+                        <p>Téléphone: (514) 555-1234</p>
+                        <p>Email: info@watchesbyfelix.com</p>
+                        <p>NEQ: 1234567890</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="shop.html">Boutique</a></li>
+                            <li><a href="gallery.html">Galerie</a></li>
+                            <li><a href="ebook.html">E-Book</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Légal</h3>
+                        <ul>
+                            <li><a href="terms.html">Conditions générales</a></li>
+                            <li><a href="privacy.html">Politique de confidentialité</a></li>
+                            <li><a href="shipping.html">Livraison et retours</a></li>
+                            <li><a href="legal.html">Mentions légales</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@watchesbyfelix.com</li>
+                            <li><i class="fas fa-phone"></i> (514) 555-1234</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Montréal, Québec, Canada</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WatchesByFelix Inc. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/shop.js"></script>
+</body>
+</html>

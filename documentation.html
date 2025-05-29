@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation GitHub Pages | WatchesByFelix</title>
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/additional.css">
+</head>
+<body>
+    <div class="documentation">
+        <h1>Documentation du site WatchesByFelix</h1>
+        
+        <p>Cette documentation explique comment mettre en ligne et maintenir le site web WatchesByFelix sur GitHub Pages.</p>
+        
+        <h2>1. Structure du site</h2>
+        
+        <p>Le site est organisé selon la structure suivante :</p>
+        
+        <pre><code>watchesbyfelix/
+├── index.html              # Page d'accueil
+├── shop.html               # Page boutique avec badges VENDU
+├── gallery.html            # Galerie de photos
+├── ebook.html              # Page de l'ebook
+├── about.html              # Page À propos
+├── contact.html            # Page Contact
+├── privacy.html            # Politique de confidentialité
+├── terms.html              # Conditions générales de vente
+├── shipping.html           # Livraison et retours
+├── legal.html              # Mentions légales
+├── assets/
+│   ├── css/
+│   │   ├── style.css       # Styles principaux
+│   │   ├── shop.css        # Styles spécifiques à la boutique
+│   │   └── additional.css  # Styles additionnels
+│   ├── js/
+│   │   ├── main.js         # Script principal
+│   │   └── shop.js         # Script pour la boutique
+│   └── images/
+│       ├── logo.svg        # Logo principal
+│       ├── logo-white.svg  # Logo blanc pour le footer
+│       ├── favicon.ico     # Favicon
+│       ├── og-image.jpg    # Image pour partage social
+│       └── ...             # Autres images
+└── README.md               # Documentation</code></pre>
+        
+        <h2>2. Mise en ligne sur GitHub Pages</h2>
+        
+        <h3>2.1 Création du dépôt GitHub</h3>
+        
+        <ol>
+            <li>Connectez-vous à votre compte GitHub</li>
+            <li>Cliquez sur "New repository" pour créer un nouveau dépôt</li>
+            <li>Nommez le dépôt <code>watchesbyfelix.github.io</code> (ce format spécifique est nécessaire pour GitHub Pages)</li>
+            <li>Choisissez "Public" comme visibilité</li>
+            <li>Cliquez sur "Create repository"</li>
+        </ol>
+        
+        <h3>2.2 Téléchargement des fichiers</h3>
+        
+        <p>Vous pouvez télécharger les fichiers sur GitHub de deux façons :</p>
+        
+        <h4>Option 1 : Via l'interface web de GitHub</h4>
+        
+        <ol>
+            <li>Accédez à votre dépôt <code>watchesbyfelix.github.io</code></li>
+            <li>Cliquez sur "Add file" puis "Upload files"</li>
+            <li>Faites glisser tous les fichiers et dossiers du site</li>
+            <li>Ajoutez un message de commit comme "Initial upload"</li>
+            <li>Cliquez sur "Commit changes"</li>
+        </ol>
+        
+        <h4>Option 2 : Via Git en ligne de commande</h4>
+        
+        <p>Si vous êtes à l'aise avec Git, vous pouvez utiliser les commandes suivantes :</p>
+        
+        <pre><code>git clone https://github.com/votre-nom-utilisateur/watchesbyfelix.github.io.git
+cd watchesbyfelix.github.io
+# Copiez tous les fichiers du site dans ce dossier
+git add .
+git commit -m "Initial commit"
+git push origin main</code></pre>
+        
+        <h3>2.3 Activation de GitHub Pages</h3>
+        
+        <ol>
+            <li>Accédez à votre dépôt sur GitHub</li>
+            <li>Cliquez sur "Settings" (onglet en haut à droite)</li>
+            <li>Dans le menu de gauche, cliquez sur "Pages"</li>
+            <li>Dans la section "Source", sélectionnez "main" comme branche</li>
+            <li>Cliquez sur "Save"</li>
+            <li>Attendez quelques minutes que GitHub déploie votre site</li>
+            <li>Votre site sera accessible à l'adresse <code>https://watchesbyfelix.github.io</code></li>
+        </ol>
+        
+        <div class="note">
+            <p><strong>Note :</strong> Le déploiement initial peut prendre jusqu'à 10 minutes. Les mises à jour ultérieures sont généralement plus rapides.</p>
+        </div>
+        
+        <h2>3. Personnalisation du site</h2>
+        
+        <h3>3.1 Modification des informations de contact</h3>
+        
+        <p>Les informations de contact sont présentes dans plusieurs fichiers :</p>
+        
+        <ul>
+            <li>Dans le pied de page de chaque page HTML (section <code>footer</code>)</li>
+            <li>Dans les pages légales (privacy.html, terms.html, shipping.html, legal.html)</li>
+            <li>Dans la page contact.html</li>
+        </ul>
+        
+        <p>Vous devez mettre à jour ces informations avec vos coordonnées réelles :</p>
+        
+        <ul>
+            <li>Adresse physique</li>
+            <li>Numéro de téléphone</li>
+            <li>Adresse email</li>
+            <li>Numéro d'entreprise du Québec (NEQ)</li>
+        </ul>
+        
+        <h3>3.2 Ajout de vos propres images</h3>
+        
+        <p>Pour ajouter vos propres images de montres :</p>
+        
+        <ol>
+            <li>Préparez des images de bonne qualité (idéalement au format 16:9 ou 4:3)</li>
+            <li>Redimensionnez-les à une taille raisonnable (max 1200px de large)</li>
+            <li>Placez-les dans le dossier <code>assets/images/</code></li>
+            <li>Mettez à jour les références dans les fichiers HTML</li>
+        </ol>
+        
+        <h3>3.3 Modification des liens de la boutique</h3>
+        
+        <p>Dans le fichier <code>shop.html</code>, vous devez mettre à jour les liens de redirection vers votre site de vente externe :</p>
+        
+        <pre><code>&lt;a href="https://external-shop-url.com/product1" class="shop-item-link" target="_blank"&gt;</code></pre>
+        
+        <p>Remplacez <code>https://external-shop-url.com/product1</code> par l'URL réelle de votre produit sur le site de vente.</p>
+        
+        <h3>3.4 Mise à jour du statut des produits</h3>
+        
+        <p>Pour marquer un produit comme vendu :</p>
+        
+        <ol>
+            <li>Localisez l'élément <code>shop-item</code> correspondant dans <code>shop.html</code></li>
+            <li>Changez l'attribut <code>data-availability</code> de "available" à "sold"</li>
+            <li>Supprimez la balise <code>&lt;a&gt;</code> entourant le contenu</li>
+            <li>Ajoutez la div <code>sold-badge</code> à l'intérieur de <code>shop-item-image</code></li>
+            <li>Mettez à jour le texte du statut</li>
+        </ol>
+        
+        <h2>4. Maintenance du site</h2>
+        
+        <h3>4.1 Mise à jour du contenu</h3>
+        
+        <p>Pour mettre à jour le contenu du site :</p>
+        
+        <ol>
+            <li>Modifiez les fichiers HTML concernés</li>
+            <li>Téléchargez les fichiers modifiés sur GitHub</li>
+            <li>GitHub Pages déploiera automatiquement les modifications</li>
+        </ol>
+        
+        <h3>4.2 Ajout de nouvelles pages</h3>
+        
+        <p>Pour ajouter une nouvelle page :</p>
+        
+        <ol>
+            <li>Créez un nouveau fichier HTML en vous basant sur un fichier existant</li>
+            <li>Assurez-vous d'inclure l'en-tête et le pied de page standard</li>
+            <li>Ajoutez un lien vers cette page dans le menu de navigation</li>
+            <li>Téléchargez le nouveau fichier sur GitHub</li>
+        </ol>
+        
+        <h3>4.3 Mise à jour des métadonnées de partage social</h3>
+        
+        <p>Les métadonnées pour le partage sur les réseaux sociaux se trouvent dans la section <code>&lt;head&gt;</code> de chaque page HTML :</p>
+        
+        <pre><code>&lt;meta property="og:title" content="WatchesByFelix | Montres Seiko Modifiées Artisanales"&gt;
+&lt;meta property="og:description" content="Découvrez des montres Seiko modifiées uniques, créées avec passion au Québec. Pièces exclusives, formations et communauté de passionnés."&gt;
+&lt;meta property="og:image" content="https://watchesbyfelix.github.io/assets/images/og-image.jpg"&gt;
+&lt;meta property="og:url" content="https://watchesbyfelix.github.io"&gt;</code></pre>
+        
+        <p>Assurez-vous de mettre à jour ces informations pour chaque page, en particulier l'URL et le titre.</p>
+        
+        <h2>5. Conseils et bonnes pratiques</h2>
+        
+        <div class="tip">
+            <p><strong>Conseil :</strong> Testez régulièrement votre site sur différents appareils (ordinateur, tablette, mobile) pour vous assurer qu'il s'affiche correctement.</p>
+        </div>
+        
+        <div class="warning">
+            <p><strong>Attention :</strong> N'oubliez pas de mettre à jour les informations légales (conditions générales, politique de confidentialité) en fonction de l'évolution de votre activité et des lois en vigueur.</p>
+        </div>
+        
+        <h3>5.1 Optimisation des images</h3>
+        
+        <p>Pour optimiser les performances de votre site :</p>
+        
+        <ul>
+            <li>Compressez vos images avant de les télécharger (utilisez des outils comme TinyPNG)</li>
+            <li>Utilisez des formats modernes comme WebP quand c'est possible</li>
+            <li>Spécifiez les dimensions des images dans le HTML pour éviter les décalages de mise en page</li>
+        </ul>
+        
+        <h3>5.2 Référencement (SEO)</h3>
+        
+        <p>Pour améliorer le référencement de votre site :</p>
+        
+        <ul>
+            <li>Utilisez des titres descriptifs pour chaque page</li>
+            <li>Rédigez des méta-descriptions uniques et pertinentes</li>
+            <li>Utilisez des balises heading (h1, h2, h3) de manière hiérarchique</li>
+            <li>Ajoutez des attributs alt descriptifs à toutes vos images</li>
+            <li>Créez un fichier sitemap.xml et robots.txt</li>
+        </ul>
+        
+        <h2>6. Ressources utiles</h2>
+        
+        <ul>
+            <li><a href="https://docs.github.com/en/pages" target="_blank">Documentation officielle GitHub Pages</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">Tutoriels HTML sur W3Schools</a></li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank">Tutoriels CSS sur W3Schools</a></li>
+            <li><a href="https://www.w3schools.com/js/" target="_blank">Tutoriels JavaScript sur W3Schools</a></li>
+            <li><a href="https://ogp.me/" target="_blank">Documentation Open Graph Protocol</a></li>
+        </ul>
+        
+        <p class="last-updated">Dernière mise à jour : 26 mai 2025</p>
+    </div>
+    
+    <!-- Scripts JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
